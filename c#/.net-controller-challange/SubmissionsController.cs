@@ -13,7 +13,7 @@ public class SubmissionsController : ControllerBase
     [Route("{id}")]
     public async Task<IActionResult> UpdateSubmission(
         [FromRoute] int id,
-        [FromBody] UpdateSubmissionRequest request,
+        [FromBody] UpdateSubmissionRequest request, // TODO: implement request model
         CancellationToken cancellationToken,
     )
     {
