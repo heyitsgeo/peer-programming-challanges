@@ -57,7 +57,7 @@ export default {
             // TODO: save submission
         },
         cancelEdit() {
-            this.editingSubmission = true;
+            this.editingSubmission = false;
         },
         creatingSubmission() {
             this.creatingSubmission = true;

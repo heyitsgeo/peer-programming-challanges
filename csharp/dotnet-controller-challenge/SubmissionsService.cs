@@ -6,7 +6,7 @@ public class SubmissionsService : ISubmissionsService
         _dbContext = dbContext;
     }
 
-    public async Task<IList<Submission>> GetPendingSubmissions(
+    public async Task<IList<Submission>> GetPendingSubmissionsAsync(
         DateTime from,
         DateTime to,
         CancellationToken cancellationToken
