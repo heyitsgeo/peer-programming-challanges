@@ -5,7 +5,7 @@
     </div>
     <div v-if="!editingSubmission || !creatingSubmission">
         <ul v-if="submissions.length > 0">
-            <li v-for="submission in submissions" :key="submission.id" @click>
+            <li v-for="submission in submissions" :key="submission.id" @click="editSubmission(submission.id)">
             <li>
         </ul>
         <p v-else style="color: red">

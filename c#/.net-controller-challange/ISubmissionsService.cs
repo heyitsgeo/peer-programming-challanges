@@ -1,6 +1,6 @@
 public interface ISubmissionsService
 {
-    Task<IList<Submission>> GetPendingSubmissions(Datetime from, Datetime to, CancellationToken);
+    Task<IList<Submission>> GetPendingSubmissions(DateTime from, DateTime to, CancellationToken cancellationToken);
 
     Task UpdateSubmission(Submission submission);
 }

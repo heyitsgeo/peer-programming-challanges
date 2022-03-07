@@ -6,7 +6,7 @@ public class Submission
 
     public Product Product { get; set; } 
 
-    public Datetime CreatedDate { get; set; }
+    public DateTime CreatedDate { get; set; }
 
     public IList<Document> Documents { get; set;}
 }

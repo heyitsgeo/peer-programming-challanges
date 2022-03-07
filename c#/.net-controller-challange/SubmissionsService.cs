@@ -6,12 +6,18 @@ public class SubmissionsService : ISubmissionsService
         _dbContext = dbContext;
     }
 
-    public async Task<IList<Submission>> GetPendingSubmissions(Datetime from, Datetime to, CancellationToken) {
+    public async Task<IList<Submission>> GetPendingSubmissions(
+        DateTime from,
+        DateTime to,
+        CancellationToken cancellationToken
+    )
+    {
         // TODO: Add filters
         return await _dbContext.Set<Submission>().ToListAsync();
     }
 
-    public Task UpdateSubmission(Submission submission) {
+    public Task UpdateSubmission(Submission submission)
+    {
         // TODO: implement this method.
     }
 }
